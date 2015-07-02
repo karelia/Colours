@@ -661,13 +661,7 @@ static CGFloat (^RAD)(CGFloat) = ^CGFloat (CGFloat degree){
      *  http://en.wikipedia.org/wiki/CIELAB
      *
      */
-    
-    // Check if it's a color
-    if (![color isKindOfClass:[self class]]) {
-        // NSLog(@"Not a %@ object.", NSStringFromClass([self class]));
-        return MAXFLOAT;
-    }
-    
+        
     // Set Up Common Variables
     NSArray *lab1 = [self CIE_LabArray];
     NSArray *lab2 = [color CIE_LabArray];
